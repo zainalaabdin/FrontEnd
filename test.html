@@ -1,0 +1,16 @@
+<html>
+	<body>
+		Enter Number: <input id="test" name="test" value=""/>
+		<input id="button" type="button" value="submit" onClick = "calc()"	 />
+		Result: <input id="result" name="result"/>
+		
+	
+		<script>
+		function calc(){
+		let num = document.getElementById("test").value;
+		num = num * 1000;
+		document.getElementById("result").value = num;
+		}
+		</script>
+	</body>
+</html>
