@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>POUND TO MILIGRAM CALCULATOR</h3>
+
+    <form> 
+        <label>POUND :</label><br>
+        <input id="ptm" name="ptm" value="" /><br><br>
+        <input id="button" type="button" value="Convert Ounce to Gram" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MILIGRAM: </lable> <br>
+	<input id="miligram" name="miligram"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("ptm").value;
+            num = num * 453592.37;
+            document.getElementById("miligram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

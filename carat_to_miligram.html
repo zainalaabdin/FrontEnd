@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>CARAT TO MILIGRAM CALCULATOR</h3>
+
+    <form> 
+        <label>CARAT :</label><br>
+        <input id="ctm" name="ctm" value="" /><br><br>
+        <input id="button" type="button" value="Convert Carat to Miligram" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MILIGRAM: </lable> <br>
+	<input id="miligram" name="miligram"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("ctm").value;
+            num = num * 200;
+            document.getElementById("miligram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

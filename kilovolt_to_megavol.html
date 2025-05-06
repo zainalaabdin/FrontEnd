@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>KILOVOLT TO MEGAVOLT CALCULATOR</h3>
+
+    <form> 
+        <label>KILOVOLT :</label><br>
+        <input id="kilovol" name="kilovol" value="" /><br><br>
+        <input id="button" type="button" value="Convert kilovolt to megavolt" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MEGAVOLT: </lable> <br>
+	<input id="megavol" name="megavol"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#kilovol").value;
+            num = num / 1000;
+            document.querySelector("#megavol").value = num;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>ACRE TO SQ. FOOT CALCULATOR</h3>
+
+    <form> 
+        <label>ACRE :</label><br>
+        <input id="acre" name="acre" value="" /><br><br>
+        <input id="button" type="button" value="Convert acre to sq. foot" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> SQ. FOOT : </lable> <br>
+	<input id="foot" name="foot"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#acre").value;
+            num = num * 43560;
+            document.querySelector("#foot").value = num;
+        }
+    </script>
+    
+</body>
+</html>

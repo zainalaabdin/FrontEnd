@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>GRAIN TO MICROGRAM CALCULATOR</h3>
+
+    <form> 
+        <label>GRAIN :</label><br>
+        <input id="gtm" name="gtm" value="" /><br><br>
+        <input id="button" type="button" value="Convert Grain to Microgram" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MICROGRAM: </lable> <br>
+	<input id="microgram" name="microgram"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("gtm").value;
+            num = num * 64798.9;
+            document.getElementById("microgram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

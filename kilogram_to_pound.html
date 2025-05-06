@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>KILOGRAM TO POUND CALCULATOR</h3>
+
+    <form> 
+        <label>ENTER KILOGRAM :</label><br>
+        <input id="ktp" name="ktp" value="" /><br><br>
+        <input id="button" type="button" value="Convert Kilogram to Pound" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> POUND: </lable> <br>
+	<input id="pound" name="pound"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("ktp").value;
+            num = num * 2.2;
+            document.getElementById("pound").value = num;
+        }
+    </script>
+    
+</body>
+</html>

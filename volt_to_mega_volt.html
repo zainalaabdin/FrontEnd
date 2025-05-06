@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>VOLT TO MEGAVOLT CALCULATOR</h3>
+
+    <form> 
+        <label>VOLT :</label><br>
+        <input id="vol" name="vol" value="" /><br><br>
+        <input id="button" type="button" value="Convert volt to megavolt" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MEGAVOLT: </lable> <br>
+	<input id="megavol" name="megavol"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#vol").value;
+            num = num / 1000000;
+            document.querySelector("#megavol").value = num;
+        }
+    </script>
+    
+</body>
+</html>

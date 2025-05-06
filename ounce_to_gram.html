@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>OUNCE TO GRAM</h3>
+
+    <form> 
+        <label>OUNCE :</label><br>
+        <input id="otg" name="otg" value="" /><br><br>
+        <input id="button" type="button" value="Convert Ounce to Gram" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> GRAM: </lable> <br>
+	<input id="gram" name="gram"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("otg").value;
+            num = num * 28.3;
+            document.getElementById("gram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

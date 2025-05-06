@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>WEAK TO HOUR CALCULATOR</h3>
+
+    <form> 
+        <label>WEAK :</label><br>
+        <input id="weak" name="weak" value="" /><br><br>
+        <input id="button" type="button" value="Convert weak to hour" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> HOUR: </lable> <br>
+	<input id="hour" name="hour"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#weak").value;
+            num = num * 168;
+            document.querySelector("#hour").value = num;
+        }
+    </script>
+    
+</body>
+</html>

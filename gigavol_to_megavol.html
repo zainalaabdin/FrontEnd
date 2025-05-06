@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>GIGAVOLT TO MEGAVOLT CALCULATOR</h3>
+
+    <form> 
+        <label>GIGAVOLT :</label><br>
+        <input id="gigavol" name="gigavol" value="" /><br><br>
+        <input id="button" type="button" value="Convert gigavolt to megavolt" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MEGAVOLT: </lable> <br>
+	<input id="megavol" name="megavol"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#gigavol").value;
+            num = num * 1000;
+            document.querySelector("#megavol").value = num;
+        }
+    </script>
+    
+</body>
+</html>

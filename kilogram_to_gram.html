@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>KILOGRAM TO GRAM CALCULATOR</h3>
+
+    <form> 
+        <label>ENTER KILOGRAM :</label><br>
+        <input id="ktm" name="ktm" value="" /><br><br>
+        <input id="button" type="button" value="Convert Kilgram to Gram" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> GRAM: </lable> <br>
+	<input id="gram" name="gram" />
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("ktm").value;
+            num = num * 1000;
+            document.getElementById("gram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

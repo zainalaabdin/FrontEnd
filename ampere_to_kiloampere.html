@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>AMPERE TO KILOAMPERE CALCULATOR</h3>
+
+    <form> 
+        <label>AMPERE :</label><br>
+        <input id="ampere" name="ampere" value="" /><br><br>
+        <input id="button" type="button" value="Convert ampere to kiloampere" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> KILOAMPERE: </lable> <br>
+	<input id="kiloampere" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#ampere");
+            let num = numElement.value;
+            num = num / 1000;
+            let resultElement = document.querySelector("#kiloampere");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

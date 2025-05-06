@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>LITR TO KILOMETER CALCULATOR</h3>
+
+    <form> 
+        <label>LITR :</label><br>
+        <input id="litr" name="litr" value="" /><br><br>
+        <input id="button" type="button" value="Convert litr to kilometer" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> KILOMETER: </lable> <br>
+	<input id="kilometer" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#litr");
+            let num = numElement.value;
+            num = num * 100;
+            let resultElement = document.querySelector("#kilometer");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

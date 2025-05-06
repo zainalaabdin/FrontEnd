@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>FOURNIGHT TO SECOND CALCULATOR</h3>
+
+    <form> 
+        <label>FOURNIGHT :</label><br>
+        <input id="fnight" name="fnight" value="" /><br><br>
+        <input id="button" type="button" value="Convert fournight to second" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> SECOND: </lable> <br>
+	<input id="second" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#fnight");
+            let num = numElement.value;
+            num = num * 1209600;
+            let resultElement = document.querySelector("#second");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

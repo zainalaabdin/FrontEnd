@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>MILE/HOUR TO KILIMETER/HOUR CALCULATOR</h3>
+
+    <form> 
+        <label>ENTER MILE/HOUR :</label><br>
+        <input id="mhkh" name="mhkh" value="" /><br><br>
+        <input id="button" type="button" value="Convert Mile/Hour to Kilometer/Hour" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> KILOMETER/HOUR: </lable> <br>
+	<input id="milehour" name="milehour" />
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("mhkh").value;
+            num = num * 1.6;
+            document.getElementById("milehour").value = num;
+        }
+    </script>
+    
+</body>
+</html>

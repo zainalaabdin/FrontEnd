@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>DEGREE TO REDIATION CALCULATOR</h3>
+
+    <form> 
+        <label>DEGREE :</label><br>
+        <input id="degree" name="degree" value="" /><br><br>
+        <input id="button" type="button" value="Convert degree to rediation" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> REDIATION: </lable> <br>
+	<input id="rediation" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#degree");
+            let num = numElement.value;
+            num = num / 57.2;
+            let resultElement = document.querySelector("#rediation");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

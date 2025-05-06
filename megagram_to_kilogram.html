@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>MEGAGRAM TO KIOGRAM CALCULATOR</h3>
+
+    <form> 
+        <label>ENTER MEGAGRAM :</label><br>
+        <input id="mtk" name="mtk" value="" /><br><br>
+        <input id="button" type="button" value="Convert Megameter to Kilometer" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> KILOGRAM: </lable> <br>
+	<input id="kilogram" name="kilogram" />
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("mtk").value;
+            num = num * 1000;
+            document.getElementById("kilogram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

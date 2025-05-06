@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>DAY TO MINUTE CALCULATOR</h3>
+
+    <form> 
+        <label>DAY :</label><br>
+        <input id="day" name="day" value="" /><br><br>
+        <input id="button" type="button" value="Convert Day to minute" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MINUTE: </lable> <br>
+	<input id="minute" name="minute"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#day").value;
+            num = num * 1440;
+            document.querySelector("#minute").value = num;
+        }
+    </script>
+    
+</body>
+</html>

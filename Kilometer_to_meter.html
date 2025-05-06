@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Kilometer to Meter</title>
+</head>
+<body>
+    <h3>Kilometer to Meter Calculator</h3>
+
+    <form> 
+        <label>ENTER KILOMETER :</label><br>
+        <input id="ktm" name="ktm" value="" /><br><br>
+        <input id="button" type="button" value="Convert Kilometer to Meter" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> METER: </lable> <br>
+	<input id="meter" name="meter" />
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("ktm").value;
+            num = num * 1000;
+            document.getElementById("meter").value = num;
+        }
+    </script>
+    
+</body>
+</html>

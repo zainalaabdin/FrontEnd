@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>YEAR TO HOUR CALCULATOR</h3>
+
+    <form> 
+        <label>YEAR :</label><br>
+        <input id="year" name="year" value="" /><br><br>
+        <input id="button" type="button" value="Convert year to hour" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> HOUR : </lable> <br>
+	<input id="hour" name="hour"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#year").value;
+            num = num * 8760;
+            document.querySelector("#hour").value = num;
+        }
+    </script>
+    
+</body>
+</html>

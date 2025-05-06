@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>CUBIT TO METER CALCULATOR</h3>
+
+    <form> 
+        <label>CUBIT :</label><br>
+        <input id="cubit" name="cubit" value="" /><br><br>
+        <input id="button" type="button" value="Convert cubit to meter" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> METER: </lable> <br>
+	<input id="meter" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#cubit");
+            let num = numElement.value;
+            num = num /  2.1872266;
+            let resultElement = document.querySelector("#meter");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>STONE TO POUND CALCULATOR</h3>
+
+    <form> 
+        <label>STONE :</label><br>
+        <input id="stone" name="stone" value="" /><br><br>
+        <input id="button" type="button" value="Convert stone to pound" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> POUND: </lable> <br>
+	<input id="pound" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#stone");
+            let num = numElement.value;
+            num = num * 14;
+            let resultElement = document.querySelector("#pound");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

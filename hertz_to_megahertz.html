@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>HERTZ TO MEGAHERTZ CALCULATOR</h3>
+
+    <form> 
+        <label>HERTZ :</label><br>
+        <input id="hertz" name="hertz" value="" /><br><br>
+        <input id="button" type="button" value="Convert hertz to megahertz" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MEGAHERTZ: </lable> <br>
+	<input id="megahertz" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#hertz");
+            let num = numElement.value;
+            num = num / 1000000;
+            let resultElement = document.querySelector("#megahertz");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

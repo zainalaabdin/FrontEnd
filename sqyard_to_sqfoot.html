@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>SQ. YARD TO SQ. FOOT CALCULATOR</h3>
+
+    <form> 
+        <label>SQ. YARD :</label><br>
+        <input id="yard" name="yard" value="" /><br><br>
+        <input id="button" type="button" value="Convert sq. yard to sq. foot" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> SQ. FOOT : </lable> <br>
+	<input id="foot" name="foot"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#yard").value;
+            num = num * 9;
+            document.querySelector("#foot").value = num;
+        }
+    </script>
+    
+</body>
+</html>

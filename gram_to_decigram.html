@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>GRAM TO DECIGRAM CALCULATOR</h3>
+
+    <form> 
+        <label>ENTER GRAM :</label><br>
+        <input id="gtd" name="gtd" value="" /><br><br>
+        <input id="button" type="button" value="Convert gram to decigram" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> DECIGRAM: </lable> <br>
+	<input id="decigram" name="decigram" />
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.getElementById("gtd").value;
+            num = num * 10;
+            document.getElementById("decigram").value = num;
+        }
+    </script>
+    
+</body>
+</html>

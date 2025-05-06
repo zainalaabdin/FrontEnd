@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>KILOWATT TO WATT CALCULATOR</h3>
+
+    <form> 
+        <label>KILOWATT :</label><br>
+        <input id="kilowatt" name="kilowatt" value="" /><br><br>
+        <input id="button" type="button" value="Convert kilowatt to watt" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> WATT: </lable> <br>
+	<input id="watt" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#kilowatt");
+            let num = numElement.value;
+            num = num * 1000;
+            let resultElement = document.querySelector("#watt");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>

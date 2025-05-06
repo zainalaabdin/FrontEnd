@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>HOUR TO MINUTE CALCULATOR</h3>
+
+    <form> 
+        <label>HOUR :</label><br>
+        <input id="hour" name="hour" value="" /><br><br>
+        <input id="button" type="button" value="Convert hour to minute" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> MINUTE: </lable> <br>
+	<input id="minute" name="minute"/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+
+            let num = document.querySelector("#hour").value;
+            num = num * 60;
+            document.querySelector("#minute").value = num;
+        }
+    </script>
+    
+</body>
+</html>

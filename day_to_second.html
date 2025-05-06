@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>CONVERTER</title>
+</head>
+<body>
+    <h3>DAY TO SECOND CALCULATOR</h3>
+
+    <form> 
+        <label>DAY :</label><br>
+        <input id="day" name="day" value="" /><br><br>
+        <input id="button" type="button" value="Convert day to second" style="background:yellow;" onclick = "calc()" /></br></br>
+        <lable> SECOND: </lable> <br>
+	<input id="second" name=""/>
+</p>
+    </form>
+
+    <script>
+        function calc(){
+			let numElement = document.querySelector("#day");
+            let num = numElement.value;
+            num = num * 86400;
+            let resultElement = document.querySelector("#second");
+            resultElement.value = num;
+        }
+    </script>
+    
+</body>
+</html>
