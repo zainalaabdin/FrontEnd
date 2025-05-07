@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>NOTE SEPRATOR</title>
+</head
+	<body>
+	<h4>Seprate Note Calculator</h4>
+	
+		<input id="amount" type="number" value="8888"/></br></br>
+		<input type="button" value="Seprate Notes" onClick="sepratenote()"/></br></br>
+		5000 Notes:
+		<input id="fivethousand"></br></br>
+		1000 Notes:
+		<input id="thousand"></br></br>
+		500 Notes:
+		<input id="fivehundred"></br></br>
+		100 Notes:
+		<input id="hundred"></br></br>
+		50 Notes:
+		<input id="fifty"></br></br>
+		20 Notes:
+		<input id="twenty"></br></br>
+		10 Notes:
+		<input id="ten"></br></br>
+		5 Notes:
+		<input id="five"></br></br>
+		2 Notes:
+		<input id="tworupees"></br></br>
+		1 Notes:
+		<input id="onerupees"></br></br>
+		<input id="result" name="result"/>
+	
+	<script>
+		function sepratenote(){
+			
+			let i = document.getElementById("amount").value;
+			let fth = parseInt(i / 5000);
+			i = i % 5000;
+			let th = parseInt(i / 1000);
+			i = i % 1000;
+			let fi = parseInt(i / 500);
+			i = i % 500;
+			let hu = parseInt(i / 100);
+			i = i % 100;
+			let fif = parseInt(i / 50);
+			i = i % 50;
+			let twe = parseInt(i / 20);
+			i = i % 20;
+			let ten = parseInt(i / 10);
+			i = i % 10;
+			let five = parseInt(i / 5);
+			i = i % 5;
+			let two = parseInt(i / 2);
+			i = i % 2;
+			let one = parseInt(i / 1);
+			i = i % 1;
+			
+			document.getElementById("fivethousand").value = fth;
+			document.getElementById("thousand").value = th;
+			document.getElementById("fivehundred").value = fi;
+			document.getElementById("hundred").value = hu;
+			document.getElementById("fifty").value = fif;
+			document.getElementById("twenty").value = twe;
+			document.getElementById("ten").value = ten;
+			document.getElementById("five").value = five;
+			document.getElementById("tworupees").value = two;
+			document.getElementById("onerupees").value = one;
+			document.getElementById("result").value = i;
+		
+		}
+	</script>
+	</body>
+</html>

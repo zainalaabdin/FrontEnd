@@ -11,16 +11,30 @@
         <input id="button" type="button" value="Convert ampere to kiloampere" style="background:yellow;" onclick = "calc()" /></br></br>
         <lable> KILOAMPERE: </lable> <br>
 	<input id="kiloampere" name=""/>
-</p>
+    </form>
+	
+	<form> 
+        <label>ACRE :</label><br>
+        <input id="acre" name="acre" value="" /><br><br>
+        <input id="button" type="button" value="Convert acre to sq. foot" style="background:yellow;" onclick = "atf()" /></br></br>
+        <lable> SQ. FOOT : </lable> <br>
+	<input id="foot" name="foot"/>
     </form>
 
     <script>
         function calc(){
-			let numElement = document.querySelector("#ampere");
-            let num = numElement.value;
-            num = num / 1000;
-            let resultElement = document.querySelector("#kiloampere");
-            resultElement.value = num;
+			let numElement = document.querySelector("#ampere").value;
+            <!-- let num = numElement.value; -->
+			num = numElement / 1000;
+            let resultElement = document.querySelector("#kiloampere").value = num;
+            <!-- resultElement.value = num; -->
+        }
+		
+		function atf(){
+
+            let num = document.querySelector("#acre").value;
+            num = num * 43560;
+            document.querySelector("#foot").value = num;
         }
     </script>
     

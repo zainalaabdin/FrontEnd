@@ -1,0 +1,26 @@
+<html>
+  <body>
+	<h4>MULTIPLY CALCULATOR</h4>
+    Enter First Number: 
+	<input id="num1" name="num1" value=""/></br></br>
+	Enter Second Number:
+	<input id="num2" name="num2" value=""/></br></br>
+    <input id="button" type="button" value="Click here for Multiply *" onClick="multiply()" /></br></br>
+	
+    Result: <input id="result" name="result" />
+
+    <script>
+    function multiply(){
+	let a = +document.getElementById("num1").value;
+	let b = +document.getElementById("num2").value;
+	document.getElementById("result").value = a*b;
+	}  
+	  
+	  <!-- let i = 8888; -->
+	  <!-- let fth = i / 5000; -->
+	  <!-- i = i % 5000; -->
+	  <!-- let th = i / 1000; -->
+	  <!-- i = i % 1000; -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+  <body>
+    Enter 1st Number: <input id="num1" name="num1" value=""/>
+	Enter 2nd Number: <input id="num2" name="num2" value=""/>
+	
+    <input id="button" type="button" value="Submit" onClick="calc()" />
+    Result: <input id="result" name="result" />
+
+    <script>
+      function calc(){
+	  let a = 9999;
+	  let num = document.getElementById("num1").value;
+	  num = parseInt(num);
+	  if(num % 2 == 0){
+		document.getElementById("result").value="true";
+	  }else{
+		document.getElementById("result").value="false";
+	  }
+	  
+	  
+	  
+	  <!-- let i = 8888; -->
+	  <!-- let fth = i / 5000; -->
+	  <!-- i = i % 5000; -->
+	  <!-- let th = i / 1000; -->
+	  <!-- i = i % 1000; -->
+	  
+	  }
+	
+    </script>
+  </body>
+</html>
+
+
+Calculator
