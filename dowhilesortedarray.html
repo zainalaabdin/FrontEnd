@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+
+  <script>
+	let num = ["zain", "adnan", "javed", "yasir", "nabeel", "kamran", "salam"];
+	let a = 0;
+
+	do {
+		let i = a + 1;
+	do {
+        let temp = "";
+        if (num[a].localeCompare(num[i]) >= 0) {
+            temp = num[a];
+            num[a] = num[i];
+            num[i] = temp;
+        }
+        i++;
+    } while (i < num.length);
+    
+    a++;
+	}while (a < num.length);
+
+	console.log(num);
+  </script>
+  
+</body>
+</html>

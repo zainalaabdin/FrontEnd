@@ -1,0 +1,32 @@
+	
+		<html>
+			<body>
+				<script>
+					let add = (a, b) => a + b;
+					let sub = (a, b) => a - b;
+					let mul = (a, b) => a * b;
+					let divi = (a, b) => parseInt(a / b); 
+					
+					let calculator = (num1, num2, operator) =>{
+					
+					switch(operator){
+						case "+":
+						return add(num1, num2);
+						case "-":
+						return sub(num1, num2);
+						case "*":
+						return mul(num1, num2);
+						case "/":
+						return divi(num1, num2);
+						default:
+						return "Invalid Operator";
+					}
+					};
+					console.log(calculator(9, 6, "+"));
+					console.log(calculator(11, 3, "-"));
+					console.log(calculator(8, 12, "*"));
+					console.log(calculator(10, 3, "/"));
+					
+				</script>
+			</body>
+		</html>

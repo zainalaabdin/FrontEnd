@@ -1,0 +1,148 @@
+
+	<html>
+		<head></head>
+		<body>
+			<script>
+			
+			let profile = {
+			stdname: "zain",
+			stdage: 30,
+			color: "brown",
+			occupation: "developer",
+			heiht: 5.3,
+			address: ["Unit 6 Hyderabad","Ghotki Sindh"],
+			cnic : "54657-8776897-0"
+			}
+			
+			//console.log(profile);
+			
+			let users = {
+  "status": "success",
+  "data": [
+    {
+      "name": "Darragh Lake",
+      "id": "63a12046-7337-4c3c-8ddb-7331808224c2",
+      "createdAt": "2021-03-29T14:00:05.548Z",
+      "updatedAt": "2021-03-29T14:00:05.548Z"
+    },
+    {
+      "name": "Frank Stevenson",
+      "id": "9a205d6c-f336-4391-9097-33003104dbaf",
+      "createdAt": "2021-03-29T14:00:29.256Z",
+      "updatedAt": "2021-03-29T14:00:29.256Z"
+    },
+    {
+      "name": "Caden Glover",
+      "id": "c864d1e4-104c-4a2a-93bb-7893edab881b",
+      "createdAt": "2021-03-29T14:02:01.866Z",
+      "updatedAt": "2021-03-29T14:02:01.866Z"
+    },
+    {
+      "name": "Claude Washington",
+      "id": "40f92c97-f88c-49d3-8359-8b2816e26833",
+      "createdAt": "2021-03-29T14:02:43.757Z",
+      "updatedAt": "2021-03-29T14:02:43.757Z"
+    },
+    {
+      "name": "Ayah Robbin",
+      "id": "d4aba19a-4044-4ca1-bb7c-532d44e57b96",
+      "createdAt": "2021-03-29T14:03:24.631Z",
+      "updatedAt": "2021-03-29T14:03:24.631Z"
+    },
+    {
+      "name": "Alicia Riggs",
+      "id": "81f38d70-910a-444d-b7e2-6b7b0efa3462",
+      "createdAt": "2021-03-29T14:05:48.843Z",
+      "updatedAt": "2021-03-29T14:05:48.843Z"
+    },
+    {
+      "name": "Hermione Cruz",
+      "createdAt": "2021-03-29T15:05:07.248Z",
+      "id": "a8c9e739-dff3-4bdb-825c-81595d8e411f",
+      "updatedAt": "2021-03-29T15:06:03.476Z"
+    }
+	  ],
+	  "total": 7,
+	  "pageSize": 10,
+	  "page": 0,
+	  "sortBy": "",
+	  "sortDirection": "ASC",
+	  "filters": []
+	};
+
+
+//console.log(JSON.stringify(JSON.parse(users));
+
+//console.log(users.data[2].name);
+
+//console.log(users.total, users.sortDirection);	
+
+
+let json = {
+	"items":
+		{
+			"item":
+				[
+					{
+						"id": "0001",
+						"type": "donut",
+						"name": "Cake",
+						"ppu": 0.55,
+						"batters":
+							{
+								"batter":
+									[
+										{ "id": "1001", "type": "Regular" },
+										{ "id": "1002", "type": "Chocolate" },
+										{ "id": "1003", "type": "Blueberry" },
+										{ "id": "1004", "type": "Devil's Food" }
+									]
+							},
+						"topping":
+							[
+								{ "id": "5001", "type": "None" },
+								{ "id": "5002", "type": "Glazed" },
+								{ "id": "5005", "type": "Sugar" },
+								{ "id": "5007", "type": "Powdered Sugar" },
+								{ "id": "5006", "type": "Chocolate with Sprinkles" },
+								{ "id": "5003", "type": "Chocolate" },
+								{ "id": "5004", "type": "Maple" }
+							]
+					},
+
+					
+
+				]
+		}
+};
+		json.items.item[0].topping[1].type = "Straberry cake";
+		json.items.item[0].topping[2].type = "Cup cake";
+		json.items.item[0].topping[3].type = "Chocklate cake";
+		json.items.item[0].batters.batter[3].type = "Apple banana"; 
+			
+		console.log(json.items.item[0].topping[1]);
+		console.log(json.items.item[0].topping[2]);
+		console.log(json.items.item[0].topping[3]);
+
+		console.log(json.items.item[0].batters.batter[3]);
+
+	
+	<!-- class Dog { -->
+		
+	  
+	  <!-- constructor(dogName, weight, color, breed) { -->
+		<!-- this.dogName = dogName; -->
+		<!-- this.weight = weight; -->
+		<!-- this.color = color; -->
+		<!-- this.breed = breed; -->
+	  <!-- } -->
+ <!-- } -->
+ <!-- let dog = new Dog("JavaScript", 2.4, "brown", "chihuahua"); -->
+ <!-- let dog2 = new Dog("JavaScript2", 2.4, "brown", "chihuahua"); -->
+ <!-- console.log(dog); -->
+ <!-- console.log(dog2); -->
+
+
+			</script>
+		</body>
+	</html>

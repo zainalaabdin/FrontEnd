@@ -1,0 +1,30 @@
+
+
+<html>
+<head>
+</head>
+<body>
+
+  Enter any Number: <input id="num" name="num" value="" /><br>
+  <input type="button" value="Submit" onclick="loopassign()" /><br><br>
+
+  <div id="result"></div> 
+
+  <script>
+    function loopassign() {
+      let num = parseInt(document.getElementById("num").value);
+      let star ="";
+		let a = 0;
+		while(a <= num){
+		star += "*".repeat(a) + "\n";
+		a++;
+		}
+		 
+      document.getElementById("result").innerText = star;
+    }
+	
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+<html>
+<head>
+  
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: #1e88e5;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #1e88e5;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+      padding: 8px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="button"] {
+      background-color: #1e88e5;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #1565c0;
+    }
+
+    .output {
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      min-height: 50px;
+      margin-top: 10px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>W E E K L Y - T A S K</h1>
+
+  <div class="row">
+  <div class="box">
+  <h2>STAR PRINT</h2>
+      <label>Enter Any Number:</label>
+      <input type="number" id="starnum" />
+      <input type="button" value="Print Stars" onclick="starfunc()" />
+  <div class="output" id="starresult"></div>
+  </div>
+
+  <div class="box">
+      <h2>FACTORIAL CALCULATOR</h2>
+      <label>Enter Any Number:</label>
+      <input type="number" id="facnum" />
+      <input type="button" value="Calculate Factorial" onclick="factorial()" />
+  <div class="output" id="facresult"></div>
+  </div>
+  </div>
+
+	<div class="row">
+    <div class="box">
+      <h2>FIBONACCI SERIES</h2>
+      <label>Enter Any Number:</label>
+      <input type="number" id="fibnum" />
+      <input type="button" value="Fibonacci Series" onclick="fibonacci()" />
+    <div class="output" id="fibresult"></div>
+    </div>
+
+    <div class="box">
+    <h2>PRIME NUMBERS</h2>
+    <label>Enter Any Number:</label>
+      <input type="number" id="num" />
+      <input type="button" value="Find Primes" onclick="primenum()" />
+      <div class="output" id="primeresult"></div>
+    </div>
+  </div>
+  <div  class="row">
+  <div class="box">
+    <h2>EVEN ODD NUMBERS</h2>
+    <label>Enter Any Number:</label>
+      <input type="number" id="evenoddnum" />
+      <input type="button" value="ODD & EVEN NUMBER" onclick="evenodd()" />
+      <div class="output" id="evenoddresult"></div>
+    </div>
+	<div class="box">
+    <h2>TABLE</h2>
+    <label>Enter Any Number:</label>
+      <input type="number" id="tablenum" />
+      <input type="button" value="Generate Table" onclick="table()" />
+      <div class="output" id="tableresult"></div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="box">
+    <h2>Arrow Function Sum</h2>
+    <label>Enter 1st Number:</label>
+      <input type="number" id="arrownumber1" />
+	 <label>Enter 2nd Number:</label>
+	  <input type="number" id="arrownumber2" />
+      <input type="button" value="Sum of Numbers" onclick="arrow()" />
+      <div class="output" id="arrowresult"></div>
+    </div>
+	<div class="box">
+    <h2>Sum By Argument</h2>
+	  <button onclick="addnumbers(8, 12)">Show Sum of 8 + 12</button>
+	<div class="output" id="sumresult"></div>
+    </div>
+  </div>
+
+  <script>
+    function starfunc() {
+      let starnum = parseInt(document.getElementById("starnum").value);
+      let star = "";
+      let stars = "";
+      for (let st = 0; st <= starnum; st++) {
+        star += "*";
+        stars += star + "\n";
+      }
+      document.getElementById("starresult").innerText = stars;
+    }
+	
+
+    function factorial() {
+      let facnum = parseInt(document.getElementById("facnum").value);
+      let fac = 1;
+      if (facnum < 0) {
+        document.getElementById("facresult").innerText = "Not defined for negative numbers.";
+        return;
+      }
+      for (let i = 1; i <= facnum; i++) {
+        fac *= i;
+      }
+      document.getElementById("facresult").innerText = fac;
+    }
+	
+
+    function fibonacci() {
+      let fibnum = parseInt(document.getElementById("fibnum").value);
+      let fi = 0, fi2 = 1;
+      let output = fi + "\n" + fi2 + "\n";
+      for (let c = 2; c <= fibnum; c++) {
+        let next = fi + fi2;
+        output += next + "\n";
+        fi = fi2;
+        fi2 = next;
+      }
+      document.getElementById("fibresult").innerText = output;
+    }
+	
+
+    function primenum() {
+      let num = parseInt(document.getElementById("num").value);
+      let prime = "";
+      
+		for(let a = 2; a <= num; a++){
+		if(num % 2 === 0){
+		prime = "Not A Prime Number";
+		}
+	}
+	if(prime == ""){
+	document.getElementById("primeresult").innerHTML = "Prime";
+	}else{
+	document.getElementById("primeresult").innerHTML = "Not a Prime Number";
+	}
+		}
+	
+	function evenodd(){
+		let evenoddnum = parseInt(document.getElementById("evenoddnum").value);
+		let evennum = "";
+		let oddnum = "";
+		
+		for(let a = 1; a <= evenoddnum; a++){
+		if(a % 2 === 0){
+		evennum = evennum + a + "</br>"
+		}else{
+		oddnum += a + "</br>";
+		}
+			}
+		document.getElementById("evenoddresult").innerHTML = "Even Number</br>"+ evennum + "</br>Odd Number</br>" + oddnum;
+		}
+		
+		
+	function table(){
+		let tablenum = parseInt(document.getElementById("tablenum").value);
+		let result = "";
+			for(t = 1; t <= 10; t++){
+		result += `${tablenum} X ${t} = ${tablenum*t} </br>`
+		}
+		document.getElementById("tableresult").innerHTML = result;
+		}
+	
+	
+	const add = (a1, b1) => a1 + b1;
+	function arrow(){
+		let arrownumber1 = parseInt(document.getElementById("arrownumber1").value);
+		let arrownumber2 = parseInt(document.getElementById("arrownumber2").value);
+		let result = add(arrownumber1, arrownumber2);
+		document.getElementById("arrowresult").innerText = `The Sum of ${arrownumber1} and ${arrownumber2} is: ${result}`
+		}
+
+	
+	function addnumbers(aa, bb){
+		 let sum = aa + bb;
+		 document.getElementById("sumresult").innerText = `The Sum of ${aa} and ${bb} is ${sum}`;
+		}
+  
+  
+  </script>
+
+</body>
+</html>

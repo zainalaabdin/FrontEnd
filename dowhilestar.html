@@ -1,0 +1,28 @@
+	
+
+<html>
+<head>
+</head>
+<body>
+	<div id="result"></div> 
+  <script>
+		let num = 4;
+		let star = "";
+		let a = 0;
+		do{
+		let b = 0;
+		do{
+		star += "*";
+		b++;
+		}while(b <= a);
+		star += "</br>";
+		a++;
+		}while(a <= num);
+		
+		document.getElementById("result").innerHTML = star;
+	
+
+  </script>
+
+</body>
+</html>
